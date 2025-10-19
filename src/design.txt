@@ -1,0 +1,16 @@
+ElevatorManager -> Elevator,IElevatorStates,ElevatorSelector
+
+IElevatorState{
+    MoveToFLoor,openDoor,closeDoor
+}
+OpenDoorStateImplements{
+    moveToFLoor ->Can not move door is openDoor
+    openDoor-> Already openDoor
+    closeDoor->Already closed
+}
+ClosedDoorStateImpl{
+
+}
+MovingStateImpl{
+
+}
